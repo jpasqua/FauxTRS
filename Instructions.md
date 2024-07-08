@@ -23,7 +23,7 @@ These instructions are a work-in-progress. As problems are noted or suggestions 
 	* **USB Cable End**: I powered my Pi by plugging a USB cable into it as usual. I just used the end of a USB-C cable (since I used a Pi 4) and connected that to the incoming power through the switch.
 	* **Various bits**. You'll need a few bits of wire to connect the breakout board, through the switch, to the Pi (via USB cable mentioned above) and the Boost converter. You'll also need wire to connect the output of the boost converter to the display.
 	* **Barrel Jack**. You may wish to use a barrel jack to connect the boost converter to the display. I decided to solder wires to the display board rather than use a jack, but that  is up to you.
-1. 	* **Female Dupont connectors**. If you want the floppy LEDs to display random activity, you'll need to connect them to pins on the Raspberry pi. The easiest way to accomplish this is to use wires with female Dupont connectors on one end. You can get a set like [this one](https://www.amazon.com/Solderless-Multicolored-Electronic-Breadboard-Protoboard/dp/B09FP1WF8Q) and then just cut off one end and connect the other end to the leads of the LEDs/resistors.
+1. **Female Dupont connectors**. If you want the floppy LEDs to display random activity, you'll need to connect them to pins on the Raspberry pi. The easiest way to accomplish this is to use wires with female Dupont connectors on one end. You can get a set like [this one](https://www.amazon.com/Solderless-Multicolored-Electronic-Breadboard-Protoboard/dp/B09FP1WF8Q) and then just cut off one end and connect the other end to the leads of the LEDs/resistors.
 
 ### Required Hardware
 
@@ -71,7 +71,7 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 1. Very carefully thread the flat-flex cable from the display through the Display retainer and connect it to the connector on the display board. It is very easy to rip this cable and extremely hard to fix it. See the photos for proper orientation.
   * **NOTE**: At this point you should have soldered wires to the back of the display board if you are not going to use the barrel connector (see wiring notes below).
 1. Screw the display board to the back of the retainer. Use at least 2 screws, but preferably all 4.
-1. 1. Install the display, display board, and Display Retainer into the case. Install two screws through the Display Retainer into the Front Insert. Install two more screws through the Display Retainer into the right side of the Case (as viewed from the rear).
+1. Install the display, display board, and Display Retainer into the case. Install two screws through the Display Retainer into the Front Insert. Install two more screws through the Display Retainer into the right side of the Case (as viewed from the rear).
   * **NOTE**: The display board comes with a control board with several buttons. The boards are connected to one another through a fairly flat 6-wire cable. You won't be using the control board in normal operation, but it is useful to have it connected during initial setup to adjust things like input source, brightness, etc. It is tough to connect the cable once the display is installed. You may wish to plug in the cable before installing the display assembly. You don't need to leave the control board connected after initial setup, but you can leave the cable installed.
 1. Install the Raspberry Pi using four M2 screws.
 1. ***Perform wiring as described below***
@@ -106,15 +106,17 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 
 The wiring is fairly simple. You can see most of it in the photos. I will trace through the connections starting with the USB-C connector. Depending on how much you want to facilitate disassembly and changes, you may wish to use two prong connectors at certain spots. Refer to the images to see where I used connectors.
 
-1. Connect V+ on the USB breakout board to one leg of the power switch.
+1. Connect `VBUS` on the USB breakout board to one leg of the power switch.
 1. Connect the other leg of the power with to the positive (red) leg of the USB Cable End.
-1. Also connect the same leg of the power switch to Vin on the Boost converter.
-1. Connect GND on the USB breakout board to GNDin on the Boost converter.
-1. Also Connect GND on the USB breakout board to to the ground (usually black or white) leg of the USB Cable End.
+1. Also connect the same leg of the power switch to `IN+` on the Boost converter.
+1. Connect `GND` on the USB breakout board to `IN-` on the Boost converter.
+1. Also Connect `GND` on the USB breakout board to to the ground (usually black or white) leg of the USB Cable End.
 1. Plug the USB Cable End into the Raspberry Pi.
-1. Connect the outputs of the boost converter (Vout and GNDout) to a cable with a male barrel connector on the end. It should correspond to the female barrel connector on the display. Plug in the barrel connector.
+1. Output from the Boost Converter. You have a couple of options here:
+    2. Connect the outputs of the boost converter (`OUT+` and `OUT-`) to a cable with a male barrel connector on the end. It should correspond to the female barrel connector on the display. Plug in the barrel connector.
+    3. *Alternatively*, solder a red wire and a black wire to the back of the display board. If you look at the board near the barrel jack you'll see pads labeled `12V` and `GND`. You can use those or solder directly to the  legs of the barrel connector. If you use this method, it is convent to put some type of 2-pin connector between the Boost converter and display so they can be separated easily. This is the approach I took. See the reference photo.
+    4. **Important**: Adjust the Boost Converter output to 12V. If the voltage is too high, it may damage your controller board.
 1. Connect the angled HDMI connector to the input of the display board.
-1. *Alternatively*, solder a red wire and a black wire to the back of the display board. If you look at the board near the barrel jack you'll see pads labeled 12V and GND. If you use this method, it is convent to put some type of 2-pin connector between the Boost converter and display so they can be separated easily. This is the approach I took. 
 1. LEDs. You have a couple of options for wiring the LEDs. In either case, solder a resistor to the long leg of each LED.
   1. Option 1 - Always on. In this configuration the LEDs will be on as long as the power switch is on.
       2. Solder wires to the short leg of each LED. Connect both of those wires to the GND connection coming from the breakout board.
@@ -127,8 +129,10 @@ The wiring is fairly simple. You can see most of it in the photos. I will trace 
 **Reference images**:
 
 [<img src="images/Wiring/Back_Cover_Wired.jpeg" width="256">](images/Wiring/Back_Cover_Wired.jpeg)
-[<img src="images/Wiring/Display_Board_with_Connector_2.jpeg" height="256">](images/Wiring/Display_Board_with_Connector_2.jpeg)
 [<img src="images/Wiring/RPi_Dupont_Cables.jpeg" width="256">](images/Wiring/RPi_Dupont_Cables.jpeg)
+
+[<img src="images/Wiring/Display_Board_with_Connector_2.jpeg" height="256">](images/Wiring/Display_Board_with_Connector_2.jpeg)
+[<img src="images/Wiring/Display_Board_Power.png" height="256">](images/Wiring/Display_Board_Power.png)
 
 ## Software Setup
 
