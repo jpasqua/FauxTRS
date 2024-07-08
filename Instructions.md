@@ -1,19 +1,13 @@
-## Printing the Parts
+# Building the FauxTRS
+These instructions are a work-in-progress. As problems are noted or suggestions arise, I will update the instructions as I have time. Thank you for your patience. Below are some reference images of the assembled model.
 
-Printing and assembling this model will take some time. The largest part, the main case, requires supports and takes me about 10.5 hours to print on a BambuLab X1. All of the STLs will import into your slicer in the orientation in which I printed them. STLs that need supports have “(NS)” in the name.
+[<img src="images/Model/Full_Front.png" width="256">](images/Model/Full_Front.png)
+[<img src="images/Model/Full_Back.png" width="256">](images/Model/Full_Back.png)
+[<img src="images/Model/Full_Top.png" width="256">](images/Model/Full_Top.png)
 
-* **Back Cover**. There are two options for this model, but you should only print one. 
-  * *Back Cover with HDMI Opening.stl*: Has an opening for an HDMI connector for an external display.
-  * *Back Cover without HDMI Opening.stl*: No opening for HDMI connector.
-* **Badge.stl**: This badge is glued onto the from of the display in the recessed area between the faux floppy drives. It should be printed with black filament up to the 0.6mm height, then printed in white filament the rest of the way. Use your slicer to set a pause so you can change filament, or use a multi-filament printer.
-* **Case**. This is the largest part - the main case. There are two options, but you should only print one. This part requires supports. I used slim tree supports. The choice between the two options depends on your printer and settings, but it can't really hurt to print the one with the strut included. It's not much more time or filament.
-  * *Case with Strut (NS).stl*: Has a “strut” towards the top of the model in the “as-printed” orientation. This can help avoid drift in the side walls. The strut can be left in place after printing or snipped out with a sharp blade. 
-  * *Case without Strut (NS).stl*: Same, but no strut.
-* **Display Clip.stl**. This part screws in to the side of the display and helps to hold the front insert firmly in place.
-* **Display Retainer (NS).stl**. This part screws into the main case and the Front Insert to hold the display in place. It also provides a spot to mount the controller board for the display. It requires supports, but they are minimal and easy to remove. I used slim tree supports.
-* **Front Insert.stl**. This component fits inside the case and provides the bezel for the screen and the faux floppy disks.
+## Required Supplies
 
-## Required Electronics
+### Required Electronics
 
 * **Raspberry Pi 3/4/5**. I use a model 4 and find the performance completely acceptable. There are many places to source these. To find one you can use [rpilocator](https://rpilocator.com/).
 * **5" 640x480 Display**. I used a 4x3 display to get the shape closer to the original aspect ratio, though still not quite as square. These are more difficult to find, but they are [available on eBay](https://www.ebay.com/itm/126148049546) along with the controller board which has an HDMI interface.
@@ -31,7 +25,7 @@ Printing and assembling this model will take some time. The largest part, the ma
 	* **Barrel Jack**. You may wish to use a barrel jack to connect the boost converter to the display. I decided to solder wires to the display board rather than use a jack, but that  is up to you.
 1. 	* **Female Dupont connectors**. If you want the floppy LEDs to display random activity, you'll need to connect them to pins on the Raspberry pi. The easiest way to accomplish this is to use wires with female Dupont connectors on one end. You can get a set like [this one](https://www.amazon.com/Solderless-Multicolored-Electronic-Breadboard-Protoboard/dp/B09FP1WF8Q) and then just cut off one end and connect the other end to the leads of the LEDs/resistors.
 
-## Required Hardware
+### Required Hardware
 
 You will need an assortment of screws to assemble the model:
 
@@ -41,6 +35,29 @@ You will need an assortment of screws to assemble the model:
 * (2) M3x4 cap head screws for the Boost Converter
 * (4) M2x4 cap head screws to attach the Raspberry Pi to the case.
 * (4) M3x6 cap head screws to attach the display retainer to the Front Insert and Case
+
+### Other Supplies
+
+* **Silver Filament**: The main case and back cover should be printed in a silver filament to match the original TRS-80. Alternatively you could print in white and spray paint the printed model. If you do this, you'll need to be careful about the tolerance of the fit between the Front Insert and the main case.
+* **Black Filament**: This is used for the Front Insert and part of the Badge. You can also use black, or any other color filament, for the internal parts such as the Display Retainer.
+* **White Filament**: A very small amount of white filament is need for the lettering on the badge.
+* **CA Glue, Hot Glue**: A small amout of CA glue and/or hot glue can be beneficial in securing the Front Insert to the Case.
+* **Patience**: This can go a long way towards a successful build.
+
+## Printing the Parts
+
+Printing and assembling this model will take some time. The largest part, the main case, requires supports and takes me about 10.5 hours to print on a BambuLab X1. All of the STLs will import into your slicer in the orientation in which I printed them. STLs that need supports have “(NS)” in the name.
+
+* **Back Cover**. There are two options for this model, but you should only print one. 
+  * *Back Cover with HDMI Opening.stl*: Has an opening for an HDMI connector for an external display.
+  * *Back Cover without HDMI Opening.stl*: No opening for HDMI connector.
+* **Badge.stl**: This badge is glued onto the from of the display in the recessed area between the faux floppy drives. It should be printed with black filament up to the 0.6mm height, then printed in white filament the rest of the way. Use your slicer to set a pause so you can change filament, or use a multi-filament printer.
+* **Case**. This is the largest part - the main case. There are two options, but you should only print one. This part requires supports. I used slim tree supports. The choice between the two options depends on your printer and settings, but it can't really hurt to print the one with the strut included. It's not much more time or filament.
+  * *Case with Strut (NS).stl*: Has a “strut” towards the top of the model in the “as-printed” orientation. This can help avoid drift in the side walls. The strut can be left in place after printing or snipped out with a sharp blade. 
+  * *Case without Strut (NS).stl*: Same, but no strut.
+* **Display Clip.stl**. This part screws in to the side of the display and helps to hold the front insert firmly in place.
+* **Display Retainer (NS).stl**. This part screws into the main case and the Front Insert to hold the display in place. It also provides a spot to mount the controller board for the display. It requires supports, but they are minimal and easy to remove. I used slim tree supports.
+* **Front Insert.stl**. This component fits inside the case and provides the bezel for the screen and the faux floppy disks.
 
 ## Assembly
 
@@ -74,6 +91,15 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 [<img src="images/Assembly/Display_Board_with_connector.jpeg" width="256">](images/Assembly/Display_Board_with_connector.jpeg)
 [<img src="images/Assembly/Display_Board.jpeg" width="256">](images/Assembly/Display_Board.jpeg)
 [<img src="images/Assembly/HDMI_Cable.jpeg" width="256">](images/Assembly/HDMI_Cable.jpeg)
+
+**Model Images**:
+
+[<img src="images/Model/Back_Cover_Inside.png" width="256">](images/Model/Back_Cover_Inside.png)
+[<img src="images/Model/Back_Cover_Outside.png" width="256">](images/Model/Back_Cover_Outside.png)
+[<img src="images/Model/Full_Back.png" width="256">](images/Model/Full_Back.png)
+[<img src="images/Model/Interior_Clip_and_LEDs.png" width="256">](images/Model/Interior_Clip_and_LEDs.png)
+[<img src="images/Model/Interior_Display_Retainer.png" width="256">](images/Model/Interior_Display_Retainer.png)
+[<img src="images/Model/Interior_Pi.png" width="256">](images/Model/Interior_Pi.png)
 
 
 ## Wiring
