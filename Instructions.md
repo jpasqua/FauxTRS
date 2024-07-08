@@ -130,6 +130,7 @@ The wiring is fairly simple. You can see most of it in the photos. I will trace 
 
 [<img src="images/Wiring/Back_Cover_Wired.jpeg" width="256">](images/Wiring/Back_Cover_Wired.jpeg)
 [<img src="images/Wiring/RPi_Dupont_Cables.jpeg" width="256">](images/Wiring/RPi_Dupont_Cables.jpeg)
+[<img src="images/Wiring/pinout-corrected.jpeg" width="256">](images/Wiring/pinout-corrected.jpeg)
 
 [<img src="images/Wiring/Display_Board_with_Connector_2.jpeg" height="256">](images/Wiring/Display_Board_with_Connector_2.jpeg)
 [<img src="images/Wiring/Display_Board_Power.png" height="256">](images/Wiring/Display_Board_Power.png)
