@@ -1,5 +1,5 @@
 # Building the FauxTRS
-These instructions are a work-in-progress. As problems are noted or suggestions arise, I will update the instructions as I have time. Thank you for your patience. Below are some reference images of the assembled model.
+These instructions are a work-in-progress. As problems are noted or suggestions arise, I will update the instructions as I have time. Thank you for your patience. Throughout the Instructions when I am referring to a printed part, I will italicize the name. For example: *Back Cover*. Below are some reference images of the assembled model.
 
 [<img src="images/Model/Full_Front.png" width="256">](images/Model/Full_Front.png)
 [<img src="images/Model/Full_Back.png" width="256">](images/Model/Full_Back.png)
@@ -12,7 +12,7 @@ These instructions are a work-in-progress. As problems are noted or suggestions 
 * **Raspberry Pi 3/4/5**. I use a model 4 and find the performance completely acceptable. There are many places to source these. To find one you can use [rpilocator](https://rpilocator.com/).
 * **5" 640x480 Display**. I used a 4x3 display to get the shape closer to the original aspect ratio, though still not quite as square. These are more difficult to find, but they are [available on eBay](https://www.ebay.com/itm/126148049546) along with the controller board which has an HDMI interface.
 * **Keyboard**. The model has a slot for a small wireless keyboard. The model I used will operate using Bluetooth or an included RF dongle. The model I used can be found on [AliExpress](https://www.aliexpress.us/item/3256805302970479.html).
-* **USB-C breakout board**. This board fits in the back cover and is the power jack for the model. You can find the board I used on [Amazon](https://www.amazon.com/dp/B09BW3HG49).
+* **USB-C breakout board**. This board fits in the *Back Cover* and is the power jack for the model. You can find the board I used on [Amazon](https://www.amazon.com/dp/B09BW3HG49).
 * **HDMI Cable**: The display connects to the Raspberry Pi via HDMI, but there is not any space for the typical bulky HDMI cables. I used a flat-flex cable with an up-angle HDMI connector for the display. The other end of the cable will depend on which Pi you use. I used a Flat-flex cable similar to [this one](https://www.amazon.com/JSER-HDMI-Type-Male-Cable/dp/B071FJY2BB), but with a micro-hdmi connector on one end. You can mix and match ends or buy a cable with both ends supplied (check the supplier's Amazon store). Be very careful to get the right one for your setup.
 * **Power switch**. You need a standard latching push button. The one I used can be found on [Amazon](https://www.amazon.com/Cylewet-Self-Locking-Latching-Button-CYT1091/dp/B075VBV4QH).
 * **Boost Converter**. The display runs on 12V, so you'll need to boost the 5V supply coming in. There are lots of available boost converters. The case has mounting spots for [this one](https://www.amazon.com/gp/product/B0833SQF8Z).
@@ -31,58 +31,60 @@ These instructions are a work-in-progress. As problems are noted or suggestions 
 
 You will need an assortment of screws to assemble the model:
 
-* (4) M3x10 socket head or cap head screws to attach the back cover to the case. 
-* (2) M3x10 cap head screws if you are using the optional HDMI connector on the back cover.
-* (2) M3x4 cap head screws for the USB-C breakout board
-* (2) M3x4 cap head screws for the Boost Converter
-* (4) M2x4 cap head screws to attach the Raspberry Pi to the case.
-* (4) M3x6 cap head screws to attach the display retainer to the Front Insert and Case
+* (4) M3x10 socket head or cap head screws to attach the *Back Cover* to the *Case*. 
+* (2) M3x10 cap head screws if you are using the optional HDMI connector on the *Back Cover*.
+* (4) M3x4 cap head screws
+	* (2) For the USB-C breakout board
+	* (2) For the Boost Converter
+* (4) M2x4 cap head screws to attach the Raspberry Pi to the *Case*.
+* (4) M3x6 cap head screws to attach the display retainer to the *Front Insert* and *Case*
 
 ### Other Supplies
 
-* **Silver Filament**: The main case and back cover should be printed in a silver filament to match the original TRS-80. Alternatively you could print in white and spray paint the printed model. If you do this, you'll need to be careful about the tolerance of the fit between the Front Insert and the main case.
-* **Black Filament**: This is used for the Front Insert and part of the Badge. You can also use black, or any other color filament, for the internal parts such as the Display Retainer.
-* **White Filament**: A very small amount of white filament is need for the lettering on the badge.
-* **CA Glue, Hot Glue**: A small amout of CA glue and/or hot glue can be beneficial in securing the Front Insert to the Case.
+* **Silver Filament**: The *Case* and *Back Cover* should be printed in a silver filament to match the original TRS-80. Alternatively you could print in white and spray paint the printed model. If you do this, you'll need to be careful about the tolerance of the fit between the *Front Insert* and the *Case*.
+* **Black Filament**: This is used for the *Front Insert* and part of the *Badge*. You can also use black, or any other color filament, for the internal parts such as the *Display Retainer*.
+* **White Filament**: A very small amount of white filament is need for the lettering on the *Badge*.
+* **CA Glue, Hot Glue**: A small amout of CA glue and/or hot glue can be beneficial in securing the *Front Insert* to the *Case*.
 * **Patience**: This can go a long way towards a successful build.
 
 ## Printing the Parts
 
-Printing and assembling this model will take some time. The largest part, the main case, requires supports and takes me about 10.5 hours to print on a BambuLab X1. All of the STLs will import into your slicer in the orientation in which I printed them. STLs that need supports have “(NS)” in the name.
+Printing and assembling this model will take some time. The largest part, the *Case*, requires supports and takes me about 10.5 hours to print on a BambuLab X1. All of the STLs will import into your slicer in the orientation in which I printed them. STLs that need supports have “(NS)” in the name. All parts may be printed with a 0.2mm layer height.
 
-* **Back Cover**. There are two options for this model, but you should only print one. 
+
+* ***Back Cover***. There are two options for this model, but you should only print one. 
   * *Back Cover with HDMI Opening.stl*: Has an opening for an HDMI connector for an external display.
   * *Back Cover without HDMI Opening.stl*: No opening for HDMI connector.
-* **Badge.stl**: This badge is glued onto the from of the display in the recessed area between the faux floppy drives. It should be printed with black filament up to the 0.6mm height, then printed in white filament the rest of the way. Use your slicer to set a pause so you can change filament, or use a multi-filament printer.
-* **Case**. This is the largest part - the main case. There are two options, but you should only print one. This part requires supports. I used slim tree supports. The choice between the two options depends on your printer and settings, but it can't really hurt to print the one with the strut included. It's not much more time or filament.
+* ***Badge.stl***: This badge is glued onto the front of the *Case* in the recessed area between the faux floppy drives. It should be printed with black filament up to the 0.6mm height, then printed in white filament the rest of the way. Use your slicer to set a pause so you can change filament, or use a multi-filament printer.
+* ***Case***. This is the largest part - the main case. There are two options, but you should only print one. This part requires supports. I used slim tree supports. The choice between the two options depends on your printer and settings, but it can't really hurt to print the one with the strut included. It's not much more time or filament.
   * *Case with Strut (NS).stl*: Has a “strut” towards the top of the model in the “as-printed” orientation. This can help avoid drift in the side walls. The strut can be left in place after printing or snipped out with a sharp blade. 
   * *Case without Strut (NS).stl*: Same, but no strut.
-* **Display Clip.stl**. This part screws in to the side of the display and helps to hold the front insert firmly in place.
-* **Display Retainer (NS).stl**. This part screws into the main case and the Front Insert to hold the display in place. It also provides a spot to mount the controller board for the display. It requires supports, but they are minimal and easy to remove. I used slim tree supports.
-* **Front Insert.stl**. This component fits inside the case and provides the bezel for the screen and the faux floppy disks.
+* ***Display Clip.stl***. This part screws in to the side of the display and helps to hold the front insert firmly in place.
+* ***Display Retainer (NS).stl***. This part screws into the main case and the Front Insert to hold the display in place. It also provides a spot to mount the controller board for the display. It requires supports, but they are minimal and easy to remove. I used slim tree supports.
+* ***Front Insert.stl***. This component fits inside the *Case* and provides the bezel for the screen and the faux floppy disks.
 
 ## Assembly
 
 After printing the parts, removing supports, and doing any other cleanup/post-processing you see fit, you are ready to assemble the model. The steps below are for the physical assembly, but you'll need to do the wiring along the way. An overview of the wiring is given in a separate section, but is called out in step 8 below.
 
 1. All of the screws mount directly into the plastic of the model. You may want to run some screws into the holes a bit to make it easier to start the screws during the actual assembly process. Do no over-tighten.
-  * In particular, ensure you can easily get screws into the holes on the right side of the case (as viewed from the rear). These are printed at the top of the model and may have stray support material in them.
-  * Be sure not to screw too far into the back of the Front Insert.
-1. Attach the Front Insert to the Case. You will have to angle it in from the back. I use a couple of dabs of CA glue in spots that will not be visible. Before gluing, do a test fit to ensure the bezel is positioned properly and that the faux floppy drives seat into the front of the Case.
-1. Attach the Display Clip to the Case using an M3 screw to help hold the Front Insert in place. At this point you may use some hot glue at the top and bottom of the left side of the Front Insert (as viewed from the rear). Don't bother if your insert feels secure.
-1. Very carefully thread the flat-flex cable from the display through the Display retainer and connect it to the connector on the display board. It is very easy to rip this cable and extremely hard to fix it. See the photos for proper orientation.
+  * In particular, ensure you can easily get screws into the holes on the right side of the *Case* (as viewed from the rear). These are printed at the top of the model and may have stray support material in them.
+  * Be sure not to screw too far into the back of the *Front Insert*.
+1. Attach the *Front Insert* to the *Case*. You will have to angle it in from the back. I use a couple of dabs of CA glue in spots that will not be visible. Before gluing, do a test fit to ensure the bezel is positioned properly and that the faux floppy drives seat into the front of the Case.
+1. Attach the *Display Clip* to the *Case* using an M3 screw to help hold the Front Insert in place. At this point you may use some hot glue at the top and bottom of the left side of the *Front Insert* (as viewed from the rear). Don't bother if your insert feels secure.
+1. Very carefully thread the flat-flex cable from the display through the *Display Retainer* and connect it to the connector on the display board. It is very easy to rip this cable and extremely hard to fix it. See the photos for proper orientation.
   * **NOTE**: At this point you should have soldered wires to the back of the display board if you are not going to use the barrel connector (see wiring notes below).
-1. Screw the display board to the back of the retainer. Use at least 2 screws, but preferably all 4.
-1. Install the display, display board, and Display Retainer into the case. Install two screws through the Display Retainer into the Front Insert. Install two more screws through the Display Retainer into the right side of the Case (as viewed from the rear).
+1. Screw the display board to the back of the *Display Retainer*. Use at least 2 screws, but preferably all 4.
+1. Install the display, display board, and *Display Retainer* into the case. Install two screws through the *Display Retainer* into the *Front Insert*. Install two more screws through the *Display Retainer* into the right side of the *Case* (as viewed from the rear).
   * **NOTE**: The display board comes with a control board with several buttons. The boards are connected to one another through a fairly flat 6-wire cable. You won't be using the control board in normal operation, but it is useful to have it connected during initial setup to adjust things like input source, brightness, etc. It is tough to connect the cable once the display is installed. You may wish to plug in the cable before installing the display assembly. You don't need to leave the control board connected after initial setup, but you can leave the cable installed.
 1. Install the Raspberry Pi using four M2 screws.
 1. ***Perform wiring as described below***
 1. After wiring the LEDs as described below, insert each into one of the holes in the Front Insert and use a dab of hot glue on each to hold them in place.
-1. Install the USB C breakout board into the Back cover using two M3 screws
-1. If you are using an external HDMI connector, install into the Back Cover now using two M3 screws
+1. Install the USB C breakout board into the *Back Cover* using two M3 screws
+1. If you are using an external HDMI connector, install it into the *Back Cover* now using two M3 screws
 1. Install the power switch
 1. Install the Boost Converter using two M3 screws
-1. After testing the unit, install the back cover using four M3 screws
+1. After testing the unit, install the *Back Cover* using four M3 screws
 2. Have a break then move on to Software Setup.
 
 **Reference Images**:
