@@ -90,10 +90,9 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 **Reference Images**:
 
 [<img src="images/Assembly/Back_Cover.jpeg" width="256">](images/Assembly/Back_Cover.jpeg)
-[<img src="images/Assembly/Display_Assm_Installed.jpeg" width="256">](images/Assembly/Display_Assm_Installed.jpeg)
-[<img src="images/Assembly/Display_Assm.jpeg" width="256">](images/Assembly/Display_Assm.jpeg)
 [<img src="images/Assembly/Display_Board_with_connector.jpeg" width="256">](images/Assembly/Display_Board_with_connector.jpeg)
-[<img src="images/Assembly/Display_Board.jpeg" width="256">](images/Assembly/Display_Board.jpeg)
+[<img src="images/Assembly/Display_Assm.jpeg" width="256">](images/Assembly/Display_Assm.jpeg)
+[<img src="images/Assembly/Display_Assm_Installed.jpeg" width="256">](images/Assembly/Display_Assm_Installed.jpeg)
 [<img src="images/Assembly/HDMI_Cable.jpeg" width="256">](images/Assembly/HDMI_Cable.jpeg)
 
 **Model Images**:
