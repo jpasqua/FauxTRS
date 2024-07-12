@@ -10,6 +10,7 @@ These instructions are a work-in-progress. As problems are noted or suggestions 
 ### Required Electronics
 
 * **Raspberry Pi 3/4/5**. I use a model 4 and find the performance completely acceptable. There are many places to source these. To find one you can use [rpilocator](https://rpilocator.com/).
+* **Power Supply**. You will need a power supply with a USB-C connector that can support the Raspberry Pi and the display. The Pi is fairly power hungry so don't skimp here. If you do, you are likely to get "Low Voltage" warnings from the Pi. The [CanaKit Pi 4 Power Supply](https://www.amazon.com/gp/product/B07TYQRXTK) has worked for me, though I'm sure there are many others that will also work. What won't work is an old phone charger with a random USB cable.
 * **5" 640x480 Display**. I used a 4x3 display to get the shape closer to the original aspect ratio, though still not quite as square. These are more difficult to find, but they are [available on eBay](https://www.ebay.com/itm/126148049546) along with the controller board which has an HDMI interface.
 * **Keyboard**. The model has a slot for a small wireless keyboard. The model I used will operate using Bluetooth or an included RF dongle. The model I used can be found on [AliExpress](https://www.aliexpress.us/item/3256805302970479.html).
 * **USB-C breakout board**. This board fits in the *Back Cover* and is the power jack for the model. You can find the board I used on [Amazon](https://www.amazon.com/dp/B09BW3HG49).
@@ -75,7 +76,7 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 1. Very carefully thread the flat-flex cable from the display through the *Display Retainer* and connect it to the connector on the display board. It is very easy to rip this cable and extremely hard to fix it. See the photos for proper orientation.
   * **NOTE**: At this point you should have soldered wires to the back of the display board if you are not going to use the barrel connector (see wiring notes below).
 1. Screw the display board to the back of the *Display Retainer*. Use at least 2 screws, but preferably all 4.
-1. Install the display, display board, and *Display Retainer* into the case. Install two screws through the *Display Retainer* into the *Front Insert*. Install two more screws through the *Display Retainer* into the right side of the *Case* (as viewed from the rear).
+1. Install the display, display board, and *Display Retainer* into the case. Install two screws through the *Display Retainer* into the *Front Insert*. Install two more screws through the *Display Retainer* into the right side of the *Case* (as viewed from the rear). Remember to peel off the clear protective plastic from the front of the display before you screw it in place.
   * **NOTE**: The display board comes with a control board with several buttons. The boards are connected to one another through a fairly flat 6-wire cable. You won't be using the control board in normal operation, but it is useful to have it connected during initial setup to adjust things like input source, brightness, etc. It is tough to connect the cable once the display is installed. You may wish to plug in the cable before installing the display assembly. You don't need to leave the control board connected after initial setup, but you can leave the cable installed.
 1. Install the Raspberry Pi using four M2 screws.
 1. ***Perform wiring as described below***
@@ -145,7 +146,8 @@ The wiring is fairly simple. You can see most of it in the photos. I will trace 
 
 	[<img src="images/SW/ScrPrefs.png" width="256">](images/SW/ScrPrefs.png)
 	[<img src="images/SW/Inverted.png" width="256">](images/SW/Inverted.png)
-
+  
+  Once you've done this, the Window System will display properly. Note, however, that as the Pi is booting, everything will appear upside down until the window system launches.
 1. **Install the emulator**. Download the trs80gp emulator using the download link on [this page](http://48k.ca/trs80gp.html). You'll see both a 64-bit and a 32-bit version. Choose the appropriate one for your Pi and follow the instructions on [the site](http://48k.ca/trs80gp.html) to run the emulator.
 1. **Blinkenlights**. If you'd like to get some activity from your floppy LEDs you can use a simple python script that basically blinks the LEDs at random intervals. Use the `runtrs.sh` script to launch the emulator instead of launching it directly. `runtrs.sh` will launch the emulator and the `FauxLED.py` python script for you. Both scripts can be found on [GitHub](https://github.com/jpasqua/FauxTRS/). Depending on your setup, you may need to install the GPIO library on your Pi. To do so, enter the following into a terminal:
 ```sudo apt-get install python3-rpi.gpio```
