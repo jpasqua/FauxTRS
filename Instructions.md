@@ -42,6 +42,8 @@ You will need an assortment of screws to assemble the model:
 
 ### Other Supplies
 
+I used PLA for all components, but for no other reason than it is what I normally use and my models won't be in an environment where the properties of other filaments will be required. If this turns out to be untrue, I will update this note.
+
 * **Silver Filament**: The *Case* and *Back Cover* should be printed in a silver filament to match the original TRS-80. Alternatively you could print in white and spray paint the printed model. If you do this, you'll need to be careful about the tolerance of the fit between the *Front Insert* and the *Case*.
 * **Black Filament**: This is used for the *Front Insert* and part of the *Badge*. You can also use black, or any other color filament, for the internal parts such as the *Display Retainer*.
 * **White Filament**: A very small amount of white filament is need for the lettering on the *Badge*.
