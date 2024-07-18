@@ -18,3 +18,8 @@ In addition to the [instructions](Instructions.md), the repository contains scri
 `FauxLEDs.py` is a script that randomly flashes the LEDs on the Faux TRS Model. It is launched by the runtrs.sh script so you don't need to invoke it manually.
 
 `runtrs.sh` is a bash script that can be used to launch the trs80gp emulator and the FauxLEDs script. It will pass along any arguments you provide to trs80gp. If you kill this script (e.g. CTRL-C), it will stop both trs80gp and FauxLEDs, ensuring that the GPIO susbsystem is cleaned up properly.
+
+## Potential Future Work
+
+* **Audio**: Add an internal audio amp and speaker. At the moment I cannot get audio to work consistently with the emulator. If that changes, then you ought to be able to [set up an external bluetooth speaker or headphones](https://www.okdo.com/project/set-up-a-bluetooth-speaker-with-a-raspberry-pi/). In the future I may add an internal audio amp and speaker.
+* **External HDMI Connector**: It might be nice to be able to display on a larger screen when demonstrating the TRS-80 emulator to a group of people. When using a Pi 4 or 5, the secondary HDMI port could go to an HDMI connector on the back panel.
