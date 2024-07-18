@@ -88,6 +88,8 @@ After printing the parts, removing supports, and doing any other cleanup/post-pr
 1. Install the power switch
 1. Install the Boost Converter using two M3 screws
 1. After testing the unit, install the *Back Cover* using four M3 screws
+2. I put a small self-adhering rubber foot at each corner of the bottom of the *Case* to make it less likely to slide. This is completely optional. I used some feet I happened to have lying around, so I'm not sure exactly what they are. They look like [these](https://www.amazon.com/Adhesive-Drawers-Furniture-Dampening-Transparent/dp/B08NX9KXQP).
+
 2. Have a break then move on to Software Setup.
 
 **Reference Images**:
