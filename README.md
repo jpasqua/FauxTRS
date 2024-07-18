@@ -19,6 +19,11 @@ In addition to the [instructions](Instructions.md), the repository contains scri
 
 `runtrs.sh` is a bash script that can be used to launch the trs80gp emulator and the FauxLEDs script. It will pass along any arguments you provide to trs80gp. If you kill this script (e.g. CTRL-C), it will stop both trs80gp and FauxLEDs, ensuring that the GPIO susbsystem is cleaned up properly.
 
+## Other Models
+
+If your vintage computer tastes run more towards classic Macs, check out the [Faux Mac](https://github.com/jpasqua/FauxMac). If you're a DEC person, check out the [Faux VT100](https://github.com/jpasqua/FauxVT).
+
+
 ## Potential Future Work
 
 * **Audio**: Add an internal audio amp and speaker. At the moment I cannot get audio to work consistently with the emulator. If that changes, then you ought to be able to [set up an external bluetooth speaker or headphones](https://www.okdo.com/project/set-up-a-bluetooth-speaker-with-a-raspberry-pi/). In the future I may add an internal audio amp and speaker.
