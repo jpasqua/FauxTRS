@@ -26,5 +26,5 @@ If your vintage computer tastes run more towards classic Macs, check out the [Fa
 
 ## Potential Future Work
 
-* **Audio**: Add an internal audio amp and speaker. At the moment I cannot get audio to work consistently with the emulator. If that changes, then you ought to be able to [set up an external bluetooth speaker or headphones](https://www.okdo.com/project/set-up-a-bluetooth-speaker-with-a-raspberry-pi/). In the future I may add an internal audio amp and speaker.
+* **Audio**: Add an internal audio amp and speaker. You can [set up an external bluetooth speaker or headphones](https://www.okdo.com/project/set-up-a-bluetooth-speaker-with-a-raspberry-pi/) to get audio from the Pi. In the future I may add an internal audio amp and speaker. *However*, at the moment I cannot get audio to work consistently with the emulator.
 * **External HDMI Connector**: It might be nice to be able to display on a larger screen when demonstrating the TRS-80 emulator to a group of people. When using a Pi 4 or 5, the secondary HDMI port could go to an HDMI connector on the back panel.
