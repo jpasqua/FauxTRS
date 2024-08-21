@@ -70,7 +70,7 @@ Printing and assembling this model will take some time. The largest part, the *C
 
 After printing the parts, removing supports, and doing any other cleanup/post-processing you see fit, you are ready to assemble the model. The steps below are for the physical assembly, but you'll need to do the wiring along the way. An overview of the wiring is given in a separate section, but is called out in step 8 below.
 
-1. All of the screws mount directly into the plastic of the model. You may want to run some screws into the holes a bit to make it easier to start the screws during the actual assembly process. Do no over-tighten.
+1. All of the screws mount directly into the plastic of the model. You may want to run some screws into the holes a bit to make it easier to start the screws during the actual assembly process. Don't over-tighten.
   * In particular, ensure you can easily get screws into the holes on the right side of the *Case* (as viewed from the rear). These are printed at the top of the model and may have stray support material in them.
   * Be sure not to screw too far into the back of the *Front Insert*.
 1. Attach the *Front Insert* to the *Case*. You will have to angle it in from the back. I use a couple of dabs of CA glue in spots that will not be visible. Before gluing, do a test fit to ensure the bezel is positioned properly and that the faux floppy drives seat into the front of the Case.
